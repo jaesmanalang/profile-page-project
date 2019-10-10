@@ -72,7 +72,7 @@ body {
   width: 100%;
   border: 3px solid rgb(15, 110, 199);
   border-radius: 50%;
-  margin: 0.3rem;
+
 }
 
 #main-header .profile-name {
@@ -178,4 +178,112 @@ footer ul li a.github {
 
 footer ul li a.facebook {
   background: #3b5998;
+}
+
+/* Responsive */
+
+@media(max-width: 1399px) {
+
+  #showcase .box {
+    padding: 1rem;
+    width: 40%;
+  }
+}
+
+@media(max-width: 1029px) {
+  #showcase {
+    padding: 1rem;
+  }
+
+  #showcase .box {
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
+@media(max-width: 967px) {
+  #showcase {
+    padding: 1rem;
+  }
+
+  #showcase .box {
+    margin: 1rem;
+  }
+
+  footer ul li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width: 690px) {
+  #showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+
+  }
+
+  #showcase .box {
+    width: 80%;
+    margin: 0.75rem;
+  }
+
+  footer ul li a {
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 499px) {
+
+  #navbar .container {
+    display: block;
+    text-align: center;
+  }
+
+  #navbar ul {
+    display: block;
+    text-align: center;
+    padding: 0.3
+  }
+
+  #navbar ul li,
+  #navbar #logo {
+    padding: 0.25rem 0.4rem;
+  }
+
+
+  #main-header .profile-image {
+    height: 110px;
+    width: 110px;
+  }
+
+  #main-header .profile-name {
+    margin: 0.5rem;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 1.8rem;
+  }
+
+  #main-header .profile-location {
+    background: #333;
+    color: rgb(199, 196, 16);
+    padding: 0.3rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+
+  #showcase {
+    font-size: 0.9rem;
+  }
+
+  #showcase .box {
+    width: 95%;
+  }
+
+  footer ul li a {
+    font-size: 1.4rem;
+  }
 }
